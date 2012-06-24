@@ -1,0 +1,36 @@
+Ce projet de pendu a été réalisé pour la première session des challenges des Zér0s.
+(http://www.siteduzero.com/forum-83-773062-p1-challenges-du-zero-n-1.html)
+
+Si j'ai choisi de faire de la class Hangman une nested class, c'est que je trouvais qu'elle
+n'avait rien à faire autre part, c'est une question de design subjectif. :)
+
+Dans ce README vous trouvez quelques explications concernant mon langage de prédilection :
+Le D.
+
+Je n'ai pas documenté mon code pour la bonne raison que les explications auraient été trop longues.
+Ce README expliquera un peu mon code :
+
+auto : inférence automatique de type.
+enforce : fonction template qui throw an exception quand la condition est fausse(un peu comme "assert" mais pas le même but)
+scope(exit) : execute les statements qu'il contient dès que l'on quitte le current-scope
+
+Après le reste est compréhensible, mais demandez moi si vous ne comprenez pas.
+
+Concernant les différents fichiers de ce zip : 
+
+difficult.txt : si vous voulez changer le pendu en fonction des difficultés, entrez le path de son fichier à côté de la difficulté.
+exemple :
+Hard C:\mon\path\fichierfoo.txt
+ou
+Hard fichierfoo.txt s'il est dans ce dossier
+
+pour les fichiers "chances" : 
+Definir le nombre de chances(vies) de la partie 
+Life unNbEntierPos
+
+Puis faire un nombre exact de frames en fonction de nb de vie, chaque frames commecent par : 
+anim
+
+Attention, si le nb de frames n'est pas égal au nb de vies alors le programme plantera.
+
+Désolé pour les fautes, il est 01h25 à l'heure où j'écris.
